@@ -117,13 +117,13 @@ LearningGraph <- function(TestPrices, ArmDemands, Color, Title,
     MinBound = Bounds[[1]]
     MaxBound = Bounds[[2]]
     Results  = sapply(ArmDemands, mean)
+    ylim     = 1
   } else{
     MinBound = Bounds[[1]]*TestPrices
     MaxBound = Bounds[[2]]*TestPrices
     Results  = sapply(ArmDemands, mean)*TestPrices
+    ylim = max(max(MaxBound), max(Results)) + 0.01
   }
-
-  ylim = max(max(MaxBound), max(Results)) + 0.01
 
   ggplot() +
     geom_point(data = NULL,aes(x = TestPrices, Results), color = Color, size = 2) +
