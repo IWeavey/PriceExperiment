@@ -8,5 +8,5 @@ Description: A toy package that does price experiments for balanced, UCB and TS.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-Imports: ggplot2, ggpubr, stats, hash
+Imports: stats, hash
 RoxygenNote: 7.1.2
