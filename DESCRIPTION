@@ -1,0 +1,12 @@
+Package: priceexperiment
+Type: Package
+Title: Price Experiments with Bandits
+Version: 0.1.0
+Author: Ian Weaver
+Maintainer: Ian Weaver <ian.weaver@yale.edu>
+Description: A toy package that does price experiments for balanced, UCB and TS.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: ggplot2, ggpubr, stats, hash
+RoxygenNote: 7.1.2
